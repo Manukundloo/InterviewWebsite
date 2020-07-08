@@ -1,0 +1,5 @@
+@ECHO OFF
+start java -jar  %~dp0\InterviewApplication-0.0.1-SNAPSHOT.war %*
+
+:END
+PAUSE

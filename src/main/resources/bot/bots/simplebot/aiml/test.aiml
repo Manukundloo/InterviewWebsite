@@ -1,0 +1,252 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
+   <category>
+      <pattern>HELLO</pattern>
+      <template>
+         initialResponse
+      </template>
+   </category>
+   
+      <category>
+      <pattern>HELLO ^</pattern>
+      <template>
+      <srai>HELLO</srai>
+   </template>
+   </category>
+   
+      <category>
+      <pattern>* HELLO</pattern>
+      <template>
+      <srai>HELLO</srai>
+   </template>
+   </category>
+   
+  <category>
+      <pattern>HI ^</pattern>
+      <template>
+      <srai>HELLO</srai>
+   </template>
+   </category>
+      
+	    <category>
+      <pattern>* HI</pattern>
+      <template>
+      <srai>HELLO</srai>
+   </template>
+   </category>
+   
+   <category>
+      <pattern>FIND</pattern>
+      <template>
+      <srai>SEARCH</srai>
+   </template>
+   </category>
+   
+      <category>
+      <pattern>FIND ^</pattern>
+      <template>
+      <srai>FIND</srai>
+   </template>
+   </category>
+   
+      <category>
+      <pattern>* FIND</pattern>
+      <template>
+      <srai>FIND</srai>
+   </template>
+   </category>
+   
+         <category>
+      <pattern>SEARCH ^</pattern>
+      <template>
+      <srai>SEARCH</srai>
+   </template>
+   </category>
+   
+      <category>
+      <pattern>* SEARCH</pattern>
+      <template>
+      <srai>SEARCH</srai>
+   </template>
+   </category>
+   
+   <category>
+      <pattern>SEARCH</pattern>
+      <that>
+        initialResponse
+	</that>
+      <template>searchForOrders</template>
+   </category>
+   
+      <category>
+      <pattern>FIND</pattern>
+      <that>
+        initialResponse
+	</that>
+      <template>searchForOrders</template>
+   </category>
+   
+   <category>
+      <pattern>MODIFY</pattern>
+      <that>
+         initialResponse
+		</that>
+      <template>Please allow me to change the communication address></template>
+   </category>
+   
+   <category>
+      <pattern>ALTER ^</pattern>
+      <template>
+      <srai>MODIFY</srai>
+   </template>
+   </category>
+   
+      <category>
+      <pattern>* ALTER</pattern>
+      <template>
+      <srai>MODIFY</srai>
+   </template>
+   </category>
+	
+      <category>
+      <pattern>UPDATE ^</pattern>
+      <template>
+      <srai>MODIFY</srai>
+   </template>
+   </category>
+   
+         <category>
+      <pattern>* UPDATE</pattern>
+      <template>
+      <srai>MODIFY</srai>
+   </template>
+   </category>
+   
+
+	
+      <category>
+      <pattern>Sure</pattern>
+      <that>Please allow me to change the communication address</that>
+      <template>getBuildingName</template>
+   </category>
+   
+   <category>
+      <pattern>Sure</pattern>
+      <that>
+        getBuildingName
+	</that>
+      <template>Please enter a new value for the building name</template>
+   </category>
+   
+         <category>
+      <pattern>No</pattern>
+      <that>
+        getBuildingName
+	</that>
+      <template>Do you wish to update the value for street?</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>
+        Please enter a new value for the building name
+	</that>
+      <template>Building name updated successfully, do you wish to update the value for street?</template>
+   </category>
+   
+   <category>
+      <pattern>Sure</pattern>
+      <that>
+        Building name updated successfully, do you wish to update the value for street?
+	</that>
+      <template>Please enter a new value for the street</template>
+   </category>
+   
+       <category>
+      <pattern>No</pattern>
+      <that>
+        Do you wish to update the value for street?
+	</that>
+      <template>Do you wish to update the value for locality?</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>
+        Please enter a new value for the street
+	</that>
+      <template>Street name updated successfully, do you wish to update the value for locality?</template>
+   </category>
+   
+   <category>
+      <pattern>Sure</pattern>
+      <that>
+        Street name updated successfully, do you wish to update the value for locality?
+	</that>
+      <template>Please enter a new value for the locality</template>
+   </category>
+   
+       <category>
+      <pattern>No</pattern>
+      <that>
+        Do you wish to update the value for locality?
+	</that>
+      <template>Do you wish to update the value for town?</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>
+        Please enter a new value for the locality
+	</that>
+      <template>Locality name updated successfully, do you wish to update the value for town?</template>
+   </category>
+   
+      <category>
+      <pattern>Sure</pattern>
+      <that>
+        Locality name updated successfully, do you wish to update the value for town?
+	</that>
+      <template>Please enter a new value for the town</template>
+   </category>
+   
+       <category>
+      <pattern>No</pattern>
+      <that>
+        Do you wish to update the value for town?
+	</that>
+      <template>Do you wish to update the value for postal code?</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>
+        Please enter a new value for the town
+	</that>
+      <template>Town name updated successfully, do you wish to update the value for postal code?</template>
+   </category>
+    
+   <category>
+      <pattern>Sure</pattern>
+      <that>
+        Town name updated successfully, do you wish to update the value for postal code?
+	</that>
+      <template>Please enter a new value for the town</template>
+   </category>
+   
+      <category>
+      <pattern>No</pattern>
+      <that>
+        Do you wish to update the value for postal code?
+	</that>
+      <template>Postal code update skipped</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>
+        Please enter a new value for the postal code
+	</that>
+      <template>Postal code updated successfully</template>
+   </category>
+</aiml>
